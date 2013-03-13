@@ -1,0 +1,154 @@
+@charset "utf-8";
+/**
+ * 公共样式
+ */
+body, ul, ol, li, p, h1, h2, h3, h4, h5, h6, form, fieldset, table, th, td, img, div {
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+}
+body {
+	background: #ffffff;
+	color: #000000;
+	font-size: 14px;
+	font-family: 'Arial Unicode MS', Verdana, Arial, Helvetica, sans-serif;
+}
+ul, ol {
+	list-style-type: none;
+}
+input, textarea, select {
+	vertical-align: middle;
+	font-size: 14px;
+	padding: 2px;
+	font-family: 'Arial Unicode MS', Verdana, Arial, Helvetica, sans-serif;
+}
+a, a:hover {
+	text-decoration: none;
+}
+.clear {
+	clear: both;
+	display: block;
+	font-size: 0px;
+	line-height: 0px;
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+}
+/**
+ * page
+ */
+#main {
+	width: 480px;
+	height: 800px;
+	position: absolute;
+	left: 50%;
+	margin-left: -240px;
+	top: 0px;
+}
+#ChessboardBackground {
+	width: 480px;
+	height: 500px;
+	background: url(../images/resources/Frame1-1.bmp) 0px 0px no-repeat, /**棋盘背景第一行*/
+    url(../images/resources/Frame1-2.bmp) 32px 0 no-repeat,
+    url(../images/resources/Frame1-3.bmp) 80px 0 no-repeat,
+    url(../images/resources/Frame1-4.bmp) 128px 0 no-repeat,
+    url(../images/resources/Frame1-5.bmp) 176px 0 no-repeat,
+    url(../images/resources/Frame1-6.bmp) 224px 0 no-repeat,
+    url(../images/resources/Frame1-7.bmp) 272px 0 no-repeat,
+    url(../images/resources/Frame1-8.bmp) 320px 0 no-repeat,
+    url(../images/resources/Frame1-9.bmp) 368px 0 no-repeat,
+    url(../images/resources/Frame1-10.bmp) 416px 0 no-repeat,
+    url(../images/resources/Frame2-1.bmp) 0 32px no-repeat,           /**棋盘背景左一列*/
+    url(../images/resources/Frame3-1.bmp) 0 80px no-repeat,
+    url(../images/resources/Frame4-1.bmp) 0 128px no-repeat,
+    url(../images/resources/Frame5-1.bmp) 0 176px no-repeat,
+    url(../images/resources/Frame6-1.bmp) 0 224px no-repeat,
+    url(../images/resources/Frame7-1.bmp) 0 272px no-repeat,
+    url(../images/resources/Frame8-1.bmp) 0 320px no-repeat,
+    url(../images/resources/Frame9-1.bmp) 0 368px no-repeat,
+    url(../images/resources/Frame2-10.bmp) 416px 32px no-repeat,          /**棋盘背景最右列*/
+    url(../images/resources/Frame3-10.bmp) 416px 80px no-repeat,
+    url(../images/resources/Frame4-10.bmp) 416px 128px no-repeat,
+    url(../images/resources/Frame5-10.bmp) 416px 176px no-repeat,
+    url(../images/resources/Frame6-10.bmp) 416px 224px no-repeat,
+    url(../images/resources/Frame7-10.bmp) 416px 272px no-repeat,
+    url(../images/resources/Frame8-10.bmp) 416px 320px no-repeat,
+    url(../images/resources/Frame9-10.bmp) 416px 368px no-repeat,
+    url(../images/resources/Frame10-1.bmp) 0px 416px no-repeat,            /**棋盘背景最下列*/
+    url(../images/resources/Frame10-2.bmp) 32px 416px no-repeat,
+    url(../images/resources/Frame10-3.bmp) 80px 416px no-repeat,
+    url(../images/resources/Frame10-4.bmp) 128px 416px no-repeat,
+    url(../images/resources/Frame10-5.bmp) 176px 416px no-repeat,
+    url(../images/resources/Frame10-6.bmp) 224px 416px no-repeat,
+    url(../images/resources/Frame10-7.bmp) 272px 416px no-repeat,
+    url(../images/resources/Frame10-8.bmp) 320px 416px no-repeat,
+    url(../images/resources/Frame10-9.bmp) 368px 416px no-repeat,
+    url(../images/resources/Frame10-10.bmp) 416px 416px no-repeat;           
+}
+#A {
+	position:absolute;
+	left:32px;
+	top:32px
+}
+#B {
+	position:absolute;
+	left:80px;
+	top:32px
+}
+#C {
+	position:absolute;
+	left:128px;
+	top:32px
+}
+#D {
+	position:absolute;
+	left:176px;
+	top:32px
+}
+#E {
+	position:absolute;
+	left:224px;
+	top:32px
+}
+#F {
+	position:absolute;
+	left:272px;
+	top:32px
+}
+#G {
+	position:absolute;
+	left:320px;
+	top:32px
+}
+#H {
+	position:absolute;
+	left:368px;
+	top:32px
+}
+img {
+	float:left;
+}
+@-webkit-keyframes flip {  
+    0% {  
+        -webkit-transform: rotateY(0deg) scale(1,1);  
+        color: white;  
+    }  
+    70% {  
+        -webkit-transform: rotateY(0deg) scale(1,1);  
+        color: white;  
+    }  
+    100% {  
+        -webkit-transform: rotateY(90deg) scale(0.6,0.7);  
+        color: #3C4043;  
+    }  
+}  
+@-webkit-keyframes unflip {  
+    0% {  
+        -webkit-transform: rotateY(90deg) scale(0.6,0.7);  
+        color: #3C4043;  
+    }  
+    100% {  
+        -webkit-transform: rotateY(0deg) scale(1,1);  
+        color: white;  
+    }  
+}  

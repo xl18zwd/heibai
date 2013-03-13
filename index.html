@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta charset="UTF-8" />
+		<title>HTML5黑白棋</title>
+		<meta name="description" content="黑白棋" />
+		<meta name="keywords"  content="Web前端, 前端开发, JavaScript, HTML, Canvas, Audio, HTML5画布, HTML5游戏, 黑白棋" />
+		<link type="text/css" rel="stylesheet" href="css/main.css" />
+		<script src="js/frames/jquery.js"></script>
+		<script src="js/main.js"></script>
+	</head>
+	<body>
+		<div id="main">
+			
+			<div id="ChessboardBackground">
+
+			<div id="Chessboard">
+				<ul>
+    				<li id="A">
+        				<ul>
+            				<li id="A1"><img src="images/resources/Empty.bmp" /></li>
+            				<li id="A2"><img src="images/resources/Empty.bmp" /></li>
+            				<li id="A3"><img src="images/resources/Empty.bmp" /></li>
+            				<li id="A4"><img src="images/resources/Empty.bmp" /></li>
+            				<li id="A5"><img src="images/resources/Empty.bmp" /></li>
+            				<li id="A6"><img src="images/resources/Empty.bmp" /></li>
+            				<li id="A7"><img src="images/resources/Empty.bmp" /></li>
+            				<li id="A8"><img src="images/resources/Empty.bmp" /></li>
+        				</ul>
+    				</li>    
+    				<li id="B">
+        				<ul>
+            				<li id="B1"><img src="images/resources/Empty.bmp" /></li>
+            				<li id="B2"><img src="images/resources/Empty.bmp" /></li>
+            				<li id="B3"><img src="images/resources/Empty.bmp" /></li>
+            				<li id="B4"><img src="images/resources/Empty.bmp" /></li>
+            				<li id="B5"><img src="images/resources/Empty.bmp" /></li>
+            				<li id="B6"><img src="images/resources/Empty.bmp" /></li>
+            				<li id="B7"><img src="images/resources/Empty.bmp" /></li>
+            				<li id="B8"><img src="images/resources/Empty.bmp" /></li>
+        				</ul>
+    				</li>
+    				<li id="C">
+        				<ul>
+            				<li id="C1"><img src="images/resources/Empty.bmp" /></li>
+            				<li id="C2"><img src="images/resources/Empty.bmp" /></li>
+            				<li id="C3"><img src="images/resources/Empty.bmp" /></li>
+            				<li id="C4"><img src="images/resources/Empty.bmp" /></li>
+            				<li id="C5"><img src="images/resources/Empty.bmp" /></li>
+            				<li id="C6"><img src="images/resources/Empty.bmp" /></li>
+            				<li id="C7"><img src="images/resources/Empty.bmp" /></li>
+            				<li id="C8"><img src="images/resources/Empty.bmp" /></li>
+        				</ul>
+    				</li>
+    				<li id="D">
+        				<ul>
+            				<li id="D1"><img src="images/resources/Empty.bmp" /></li>
+            				<li id="D2"><img src="images/resources/Empty.bmp" /></li>
+            				<li id="D3"><img src="images/resources/Empty.bmp" /></li>
+            				<li id="D4"><img src="images/resources/Empty.bmp" /></li>
+            				<li id="D5"><img src="images/resources/Empty.bmp" /></li>
+            				<li id="D6"><img src="images/resources/Empty.bmp" /></li>
+            				<li id="D7"><img src="images/resources/Empty.bmp" /></li>
+            				<li id="D8"><img src="images/resources/Empty.bmp" /></li>
+        				</ul>
+    				</li>
+    				<li id="E">
+        				<ul>
+            				<li id="E1"><img src="images/resources/Empty.bmp" /></li>
+            				<li id="E2"><img src="images/resources/Empty.bmp" /></li>
+            				<li id="E3"><img src="images/resources/Empty.bmp" /></li>
+            				<li id="E4"><img src="images/resources/Empty.bmp" /></li>
+            				<li id="E5"><img src="images/resources/Empty.bmp" /></li>
+            				<li id="E6"><img src="images/resources/Empty.bmp" /></li>
+            				<li id="E7"><img src="images/resources/Empty.bmp" /></li>
+            				<li id="E8"><img src="images/resources/Empty.bmp" /></li>
+        				</ul>
+    				</li>
+    				<li id="F">
+        				<ul>
+            				<li id="F1"><img src="images/resources/Empty.bmp" /></li>
+            				<li id="F2"><img src="images/resources/Empty.bmp" /></li>
+            				<li id="F3"><img src="images/resources/Empty.bmp" /></li>
+            				<li id="F4"><img src="images/resources/Empty.bmp" /></li>
+            				<li id="F5"><img src="images/resources/Empty.bmp" /></li>
+            				<li id="F6"><img src="images/resources/Empty.bmp" /></li>
+            				<li id="F7"><img src="images/resources/Empty.bmp" /></li>
+            				<li id="F8"><img src="images/resources/Empty.bmp" /></li>
+        				</ul>
+    				</li>
+    				<li id="G">
+        				<ul>
+            				<li id="G1"><img src="images/resources/Empty.bmp" /></li>
+            				<li id="G2"><img src="images/resources/Empty.bmp" /></li>
+            				<li id="G3"><img src="images/resources/Empty.bmp" /></li>
+            				<li id="G4"><img src="images/resources/Empty.bmp" /></li>
+            				<li id="G5"><img src="images/resources/Empty.bmp" /></li>
+            				<li id="G6"><img src="images/resources/Empty.bmp" /></li>
+            				<li id="G7"><img src="images/resources/Empty.bmp" /></li>
+            				<li id="G8"><img src="images/resources/Empty.bmp" /></li>
+        				</ul>
+    				</li>
+    				<li id="H">
+        				<ul>
+            				<li id="H1"><img src="images/resources/Empty.bmp" /></li>
+            				<li id="H2"><img src="images/resources/Empty.bmp" /></li>
+            				<li id="H3"><img src="images/resources/Empty.bmp" /></li>
+            				<li id="H4"><img src="images/resources/Empty.bmp" /></li>
+            				<li id="H5"><img src="images/resources/Empty.bmp" /></li>
+            				<li id="H6"><img src="images/resources/Empty.bmp" /></li>
+            				<li id="H7"><img src="images/resources/Empty.bmp" /></li>
+            				<li id="H8"><img src="images/resources/Empty.bmp" /></li>
+        				</ul>
+    				</li>
+				</ul>
+			</div>
+			
+			</div>
+			
+		</div>
+	</body>
+</html>
